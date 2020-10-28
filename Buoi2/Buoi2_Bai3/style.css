@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #c39086;
+}
+
+#title {
+  background: url("banner.jpg") no-repeat center;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+
+#title h1 {
+  position: absolute;
+  text-align: center;
+  text-shadow: 2px 2px #000;
+  color: #ffff00;
+  font-size: 4rem;
+  font-weight: bold;
+  width: 100%;
+  top: 75px;
+}
+
+#menu {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#menu ul {
+  list-style: none;
+}
+
+#menu ul li {
+  display: inline-block;
+  background: #ff5733;
+  width: 400px;
+}
+
+#menu a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border: 1px dotted #ffff00;
+  transition: 0.5s;
+}
+
+#menu ul li a:hover {
+  background: #a72105;
+}
+
+#menu ul ul {
+  display: none;
+}
+
+#menu ul ul li {
+  width: 300px;
+}
+
+#menu ul li:hover ul {
+  display: block;
+  position: absolute;
+}
+
+#menu ul li:hover ul li {
+  display: block;
+}
+
+#content {
+  margin: 30px;
+  padding: 5px;
+}
+
+#content h4 {
+  color: #ffff00;
+  border-bottom: 3px dotted #ffff00;
+  display: inline;
+  font-size: 2rem;
+}
+
+#content p {
+  margin: 15px;
+}
+
+#content ul {
+  margin-left: 50px;
+}
+
+#content ul li a {
+  color: #fff;
+}
+
+#footer {
+  text-align: center;
+  border-top: 3px dotted #000;
+  padding: 30px;
+}

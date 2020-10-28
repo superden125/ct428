@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      table {
+        padding: 5px;
+        background: lightgrey;
+        width: 100%;
+      }
+
+      td {
+        padding: 10px;
+      }
+
+      h3 {
+        color: red;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      form {
+        max-width: 410px;
+        border: 1px solid #000;
+        padding: 10px;
+        margin: 0 auto;
+      }
+      .info {
+        background: lightgrey;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="info">
+      <p>MSSV: B1704835</p>
+      <p>Họ Tên: Triệu Đức Minh</p>
+    </div>
+    <h3>Đăng ký tài khoản mới</h3>
+    <p>Vui lòng điền đầy đủ thông tin bên dưới để đăng ký tài khoản mới</p>
+    <form>
+      <table>
+        <tr>
+          <td><label for="username">Tên đăng nhập</label></td>
+          <td><input type="text" id="username" name="username" /></td>
+        </tr>
+        <tr>
+          <td><label for="pwd">Mật khẩu</label></td>
+          <td><input type="password" id="pwd" name="pwd" /></td>
+        </tr>
+        <tr>
+          <td><label for="rePwd">Gõ lại mật khẩu</label></td>
+          <td><input type="password" id="rePwd" name="rePwd" /></td>
+        </tr>
+        <tr>
+          <td><label for="avatar">Ảnh đại diện</label></td>
+          <td><input type="file" id="avatar" name="avatar" /></td>
+        </tr>
+        <tr>
+          <td><label>Giới tính</label></td>
+          <td>
+            <input type="radio" id="male" name="gt" value="male" />
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="gt" value="female" />
+            <label for="female">Nữ</label>
+            <input type="radio" id="other" name="gt" value="other" />
+            <label for="other">Khác</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Nghề nghiệp</label></td>
+          <td>
+            <select name="job">
+              <option value="hs">Học sinh</option>
+              <option value="sv">Sinh viên</option>
+              <option value="gv">Giáo viên</option>
+              <option value="khac">Khác</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Sở thích</label></td>
+          <td>
+            <input type="checkbox" id="tt" name="hobby" value="tt" />
+            <label for="tt">Thể thao</label>
+            <input type="checkbox" id="dl" name="hobby" value="dl" />
+            <label for="dl">Du lịch</label>
+            <input type="checkbox" id="an" name="hobby" value="an" />
+            <label for="an">Âm nhạc</label>
+            <br />
+            <input type="checkbox" id="ttr" name="hobby" value="ttr" />
+            <label for="ttr">Thời trang</label>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Đăng ký" />
+            <input type="reset" value="Làm lại" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
